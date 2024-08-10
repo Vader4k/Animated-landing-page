@@ -21,6 +21,9 @@ const config: Config = {
           lg: "80px",
         },
       },
+      backgroundImage: {
+        'custom-radial-gradient': 'radial-gradient(ellipse 200% 100% at bottom left, #183EC2, #EAEEFE 100%)',
+      },
     },
   },
   plugins: [],
