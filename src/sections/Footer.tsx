@@ -6,7 +6,11 @@ import SocialLinkedIn from '@/assets/social-linkedin.svg';
 import SocialPin from '@/assets/social-pin.svg';
 import SocialYoutube from '@/assets/social-youtube.svg';
 
+
 export const Footer = () => {
+
+
+
   return (
     <footer className='bg-black text-[#BCBCBC] text-sm py-10 text-center'>
       <div className="container">
