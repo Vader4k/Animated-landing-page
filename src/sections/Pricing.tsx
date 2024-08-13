@@ -1,5 +1,7 @@
+"use client"
 import CheckIcon from '@/assets/check.svg'
 import { twMerge } from 'tailwind-merge';
+import { motion } from 'framer-motion';
 
 const pricingTiers = [
   {
@@ -71,9 +73,19 @@ export const Pricing = () => {
                 </h3>
                 {items.popular && (
                   <div className='inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20'>
-                    <span className='bg-gradient-to-r from-[#DD7DDF] via-[#E1CD86] to-[#3BFFFF] text-transparent bg-clip-text font-medium'>
+                    <motion.span 
+                      animate={{
+                        backgroundPositionX: "-100%",
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: 'linear',
+                        repeatType: 'loop'
+                      }}
+                    className='bg-gradient-to-r from-[#DD7DDF] via-[#E1CD86] to-[#3BFFFF] [background-size:200%] text-transparent bg-clip-text font-medium'>
                       Popular
-                    </span>
+                    </motion.span>
                   </div>
                 )}
               </div>
