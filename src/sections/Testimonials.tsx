@@ -89,7 +89,7 @@ const TestimonialColumn = (props : {
         repeat: Infinity,
         repeatType: "loop",
         ease: "linear",
-        duration: props.duration,
+        duration: props.duration, //sets the duration to the duration property
       }}
       >
         {[...new Array(2)].fill(0).map((_,index) => (
